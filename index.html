@@ -34,6 +34,7 @@
     var ballSpeedX = 10;
     var ballSpeedY = 4;
 
+    var player1Score = 0;
     var player2Score = 0;
 
     const WINNING_SCORE = 3;
@@ -149,7 +150,7 @@
             ballSpeedY = -ballSpeedY;
         }
     }
-    // function that draws the net down the middle of the game canvas.
+    // functoin that draws the net down the middle of the game canvas.
     function drawNet() {
     	for(var i=0; i < canvas.height; i+=40) {
     		colorRect(canvas.width/2-1,i,2,20,'white');
@@ -165,12 +166,12 @@
             canvasContext.fillStyle = 'white';
         // if win conditions are met for Player1 the message inside of canvas.fillText is displayed.
             if (player1Score >= WINNING_SCORE) {
-                canvasContext.fillText("Left Player Won!", 225, 125);
+                canvasContext.fillText("Left Player Won!",150, 125);
          // if win conditions are met for Player2 the message inside of canvas.fillText is displayed.
             } else if (player2Score >= WINNING_SCORE) {
-                canvasContext.fillText("Right Player Won!", 225, 125);
+                canvasContext.fillText("Right Player Won!", 150, 125);
             }
-            canvasContext.fillText("click to continue", 225, 150);
+            canvasContext.fillText("click to continue", 150, 200);
             return;
         }
         // function call to draw the game next.
