@@ -165,12 +165,12 @@
             canvasContext.fillStyle = 'white';
         // if win conditions are met for Player1 the message inside of canvas.fillText is displayed.
             if (player1Score >= WINNING_SCORE) {
-                canvasContext.fillText("Left Player Won!", 5, 125);
+                canvasContext.fillText("Left Player Won!", 225, 125);
          // if win conditions are met for Player2 the message inside of canvas.fillText is displayed.
             } else if (player2Score >= WINNING_SCORE) {
-                canvasContext.fillText("Right Player Won!", 5, 125);
+                canvasContext.fillText("Right Player Won!", 225, 125);
             }
-            canvasContext.fillText("click to continue", 5, 150);
+            canvasContext.fillText("click to continue", 225, 150);
             return;
         }
         // function call to draw the game next.
